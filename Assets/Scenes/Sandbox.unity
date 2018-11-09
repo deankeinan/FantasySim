@@ -530,7 +530,7 @@ GameObject:
   m_Layer: 0
   m_Name: Sound_Manager
   m_TagString: Untagged
-  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -1209,7 +1209,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e7eb208c059b784481462e432a94b03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraWidth: 1280
+  cameraWidth: 720
   cameraHeight: 720
   bottomCameraBorder: {fileID: 661956576}
   leftCameraBorder: {fileID: 924262435}
@@ -5586,7 +5586,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 895572649}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f5e7770ef19e1fa408632972dee20912, type: 3}
   m_Name: 
