@@ -1,14 +1,15 @@
 OSXStandalone
 PlayerPath?
-/Users/deankeinan/unity/FantasySim/testing 123.app
+/Users/deankeinan/Documents/FantasySim/bbb.app
 SceneListBegin?
-Assets/Troll Bridge Studios/2D Starter Kit/_Scenes/Demos/Demo Start.unity
 Assets/Troll Bridge Studios/2D Starter Kit/_Scenes/Additional Scenes (Do not run)/MainMenu.unity
 Assets/Troll Bridge Studios/2D Starter Kit/_Scenes/Additional Scenes (Do not run)/MainWorld.unity
 Assets/Troll Bridge Studios/2D Starter Kit/_Scenes/Additional Scenes (Do not run)/HouseMd.unity
 Assets/Troll Bridge Studios/2D Starter Kit/_Scenes/Additional Scenes (Do not run)/HouseLrg.unity
 Assets/Troll Bridge Studios/2D Starter Kit/_Scenes/Additional Scenes (Do not run)/HouseSml.unity
-Assets/Troll Bridge Studios/2D Starter Kit/_Scenes/Additional Scenes (Do not run)/InnBasement.unity
+Assets/Scenes/InnBasement.unity
+Assets/Scenes/NewLauncher.unity
+Assets/Scenes/FirstScene.unity
 SceneListEnd?
 486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:TrollBridge.Show_DeathCanvas
 c422dd62785a6d0afa870fbd111886ce Unity.TextMeshPro.dll:TMPro.TMP_SelectionCaret

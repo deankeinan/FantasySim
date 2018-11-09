@@ -107,12 +107,12 @@ namespace TrollBridge {
 				}
 			}
 
-            if(!KB.Global.IsTrue("fight","bill","jane")){
-                List<Area_Dialogue> areas = ListOfAreaDialogues;
-                for (int i = 0; i < areas.Count;i++){
-                    areas[i].dialogue[0] = "Wow, suddenly I feel like everything is going to be okay! What a great MVP.";
-                }
-            }
+            //if(!KB.Global.IsTrue("fight","bill","jane")){
+            //    List<Area_Dialogue> areas = ListOfAreaDialogues;
+            //    for (int i = 0; i < areas.Count;i++){
+            //        areas[i].dialogue[0] = "Wow, suddenly I feel like everything is going to be okay! What a great MVP.";
+            //    }
+            //}
 
         }
 
