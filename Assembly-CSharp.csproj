@@ -61,6 +61,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\ClickNPCToListen.cs" />
     <Compile Include="Assets\TB_Assets\2D Pro Kit\_Scripts\_Archived Scripts\Action_Key_Dialogue.cs" />
     <Compile Include="Assets\TB_Assets\2D Pro Kit\_Scripts\_Archived Scripts\Area_Dialogue.cs" />
     <Compile Include="Assets\TB_Assets\2D Pro Kit\_Scripts\_Archived Scripts\Attack_Timer.cs" />
