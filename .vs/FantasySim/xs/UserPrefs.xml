@@ -1,22 +1,10 @@
 ﻿<Properties StartupConfiguration="{88C700D4-48DB-99FD-F319-EBFC0AF3771D}|">
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Troll Bridge Studios/Editor/Terrain_Sound_By_Distance_Editor.cs">
     <Files>
-      <File FileName="Assets/Troll Bridge Studios/2D Starter Kit/_Scripts/Characters/Player/Player_Manager.cs" Line="110" Column="1" />
-      <File FileName="Assets/Troll Bridge Studios/2D Starter Kit/_Scripts/Characters/NPC/NPC_Manager.cs" Line="37" Column="1" />
-      <File FileName="Assets/Troll Bridge Studios/2D Starter Kit/_Scripts/Game Helper Managers/Grid_Helper.cs" Line="55" Column="1" />
-      <File FileName="Assets/Troll Bridge Studios/2D Starter Kit/_Scripts/States/State_Manager.cs" Line="9" Column="15" />
-      <File FileName="Assets/Troll Bridge Studios/2D Starter Kit/_Scripts/States/State_Transform.cs" Line="27" Column="1" />
-      <File FileName="Assets/Troll Bridge Studios/2D Starter Kit/Documentation/Documentation Link.txt" Line="3" Column="80" />
-      <File FileName="Assets/Troll Bridge Studios/2D Starter Kit/_Scripts/Options/Display_Settings.cs" Line="1" Column="1" />
-      <File FileName="Assets/Troll Bridge Studios/2D Starter Kit/_Scripts/Game Helper Managers/Helper_Manager.cs" Line="293" Column="4" />
-      <File FileName="Assets/Troll Bridge Studios/2D Starter Kit/_Scripts/Game Helper Managers/Setup.cs" Line="50" Column="1" />
-      <File FileName="Assets/Troll Bridge Studios/2D Starter Kit/_Scripts/Destroy/Dont_Destroy_On_Scene_Load.cs" Line="1" Column="1" />
-      <File FileName="Assets/Troll Bridge Studios/2D Starter Kit/_Scripts/Game Helper Managers/GUI_Helper.cs" Line="1" Column="1" />
-      <File FileName="Assets/Troll Bridge Studios/2D Starter Kit/_Scripts/Scenes/Scene_Locations.cs" Line="1" Column="1" />
-      <File FileName="Assets/Troll Bridge Studios/2D Starter Kit/_Scripts/Music And Sounds/Sound_Manager.cs" Line="55" Column="1" />
-      <File FileName="Assets/Troll Bridge Studios/2D Starter Kit/_Scripts/Music And Sounds/Change_Music.cs" Line="89" Column="1" />
-      <File FileName="Assets/Troll Bridge Studios/2D Starter Kit/_Scripts/Scene Change/Scene_Change_Instant.cs" Line="12" Column="22" />
+      <File FileName="Assets/Troll Bridge Studios/Editor/Archived Editor Scripts/Camera_Static_Slide_Editor.cs" Line="8" Column="1" />
+      <File FileName="Assets/Troll Bridge Studios/Editor/Chest_Key_Consume_Drawer.cs" Line="6" Column="33" />
+      <File FileName="Assets/Troll Bridge Studios/Editor/Terrain_Sound_By_Distance_Editor.cs" Line="8" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
