@@ -1,0 +1,240 @@
+[
+	{
+		"id": 0,
+		"title": "Small Bomb",
+		"value": {
+		  	"price": 1,
+			"currency": "Gold Coin"
+		},
+		"rarity": "Common",
+		"type": "Bomb",
+		"subtype": "Bomb",
+		"color": {
+			"r": 255,
+			"g": 255,
+			"b": 255,
+			"a": 255
+		},
+		"description": "This bomb can break some rocks.",
+		"inventoryitem": false,
+		"stackable": true,
+		"pickupsound": "BombPickup",
+		"usedsound": "BombDrop",
+		"slug": "small_bomb"
+	},
+
+	{
+		"id": 1,
+		"title": "Metal Sword",
+		"value": {
+		  	"price": 100,
+			"currency": "Gold Coin"
+		},
+		"rarity": "Common",
+		"type": "Weapon",
+		"subtype": "Sword",
+		"color": {
+			"r": 255,
+			"g": 255,
+			"b": 255,
+			"a": 255
+		},
+		"stats": {
+			"damage": 1,
+			"armour": 0,
+			"magicarmour": 0,
+			"movespeed": 0,
+			"health": 0,
+			"mana": 0
+		},
+		"description": "This is some pretty old metal... but sharp enough to do the trick it seems.",
+		"inventoryitem": true,
+		"stackable": false,
+		"pickupsound": "SharpWeaponPickup",
+		"usedsound": "SharpWeaponEquip",
+		"attacksound": "SwordSwing1",
+		"slug": "SetZWeaponBlade7",
+		"weaponslug": "Metal Sword Weapon"
+	},
+
+	{
+		"id": 2,
+		"title": "Red Food Bag",
+		"value": {
+		  	"price": 50,
+			"currency": "Coin"
+		},
+		"rarity": "Common",
+		"type": "Quest Item",
+		"subtype": "",
+		"color": {
+			"r": 255,
+			"g": 255,
+			"b": 255,
+			"a": 255
+		},
+		"description": "A bag full of red food!",
+		"inventoryitem": true,
+		"stackable": true,
+		"pickupsound": "PotionPickup",
+		"usedsound": "",
+		"slug": "red_food_bag"
+	},
+
+	{
+		"id": 3,
+		"title": "Small Key",
+		"value": {
+		  	"price": 10,
+			"currency": "Coin"
+		},
+		"rarity": "Common",
+		"type": "Key",
+		"subtype": "Small Key",
+		"color": {
+			"r": 255,
+			"g": 255,
+			"b": 255,
+			"a": 255
+		},
+		"description": "Unlocks basic doors and chests",
+		"inventoryitem": false,
+		"stackable": true,
+		"pickupsound": "KeyPickup",
+		"usedsound": "",
+		"slug": "KeyC"
+	},
+
+	{
+		"id": 4,
+		"title": "Coin",
+		"value": {
+		  	"price": 0,
+			"currency": "Coin"
+		},
+		"rarity": "Common",
+		"type": "Currency",
+		"subtype": "",
+		"color": {
+			"r": 255,
+			"g": 255,
+			"b": 255,
+			"a": 255
+		},
+		"description": "Basic currency used throughout Pro-Land",
+		"inventoryitem": false,
+		"stackable": true,
+		"pickupsound": "CrystalPickup",
+		"usedsound": "",
+		"slug": "CoinGold1"
+	},
+
+	{
+		"id": 5,
+		"title": "Holy Sword",
+		"value": {
+		  	"price": 400,
+			"currency": "Gold Coin"
+		},
+		"rarity": "Rare",
+		"type": "Weapon",
+		"subtype": "Sword",
+		"color": {
+			"r": 255,
+			"g": 255,
+			"b": 255,
+			"a": 255
+		},
+		"stats": {
+			"damage": 2,
+			"armour": 0,
+			"magicarmour": 0,
+			"movespeed": 0,
+			"health": 0,
+			"mana": 0
+		},
+		"description": "Has the ability to destroy the undead.",
+		"inventoryitem": true,
+		"stackable": false,
+		"pickupsound": "SharpWeaponPickup",
+		"usedsound": "SharpWeaponEquip",
+		"attacksound": "SwordSwing1",
+		"slug": "SetSWeaponBlade9",
+		"weaponslug": "Holy Sword Weapon"
+	},
+
+	{
+		"id": 6,
+		"title": "Broken Metal Sword",
+		"value": {
+		  	"price": 10,
+			"currency": "Gold Coin"
+		},
+		"rarity": "Common",
+		"type": "Craft",
+		"subtype": "Weapon",
+		"color": {
+			"r": 255,
+			"g": 255,
+			"b": 255,
+			"a": 255
+		},
+		"description": "This is useless.. but I can possibly craft it into something.",
+		"inventoryitem": true,
+		"stackable": false,
+		"pickupsound": "SharpWeaponPickup",
+		"usedsound": "SharpWeaponEquip",
+		"slug": "SetZWeaponBlade6"
+	},
+
+	{
+		"id": 7,
+		"title": "Red Potion Henry",
+		"value": {
+		  	"price": 3,
+			"currency": "Coin"
+		},
+		"rarity": "Common",
+		"type": "Consumable",
+		"subtype": "Potion",
+		"color": {
+			"r": 255,
+			"g": 255,
+			"b": 255,
+			"a": 255
+		},
+		"usage": {
+			"restorehp": 2
+		},
+		"description": "Restores some HP",
+		"inventoryitem": true,
+		"stackable": true,
+		"pickupsound": "PotionPickup",
+		"usedsound": "PotionUsed",
+		"slug": "PotionA0"
+	},
+
+	{
+		"id": 8,
+		"title": "Basic Helmet",
+		"value": {
+		  	"price": 3,
+			"currency": "Coin"
+		},
+		"rarity": "Common",
+		"type": "Helmet",
+		"subtype": "Helmet",
+		"color": {
+			"r": 255,
+			"g": 255,
+			"b": 255,
+			"a": 255
+		},
+		"description": "A very basic helmet made for protecting your head from falling rocks",
+		"inventoryitem": true,
+		"stackable": false,
+		"pickupsound": "SharpWeaponPickup",
+		"usedsound": "SharpWeaponEquip",
+		"slug": "HelmA0"
+	}
+]

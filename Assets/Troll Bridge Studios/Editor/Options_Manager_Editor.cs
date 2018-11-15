@@ -10,7 +10,8 @@ namespace TrollBridge {
 
 		SerializedProperty optionsKey;
 		SerializedProperty optionsPanel;
-		SerializedProperty noOptionKeyScenes;
+		SerializedProperty optionsPanelBackdrop;
+//		SerializedProperty noOptionKeyScenes;
 
 		SerializedProperty musicSlider;
 		SerializedProperty musicToggle;
@@ -34,7 +35,8 @@ namespace TrollBridge {
 		void OnEnable(){
 			optionsKey = serializedObject.FindProperty ("optionsKey");
 			optionsPanel = serializedObject.FindProperty ("optionsPanel");
-			noOptionKeyScenes = serializedObject.FindProperty ("noOptionKeyScenes");
+			optionsPanelBackdrop = serializedObject.FindProperty ("optionsPanelBackdrop");
+//			noOptionKeyScenes = serializedObject.FindProperty ("noOptionKeyScenes");
 
 			musicSlider = serializedObject.FindProperty ("musicSlider");
 			musicToggle = serializedObject.FindProperty ("musicToggle");
@@ -69,8 +71,10 @@ namespace TrollBridge {
 			EditorGUILayout.PropertyField(optionsKey, new GUIContent("Options Key", "The Key that is used to bring up the options."));
 			// The options panel that the settings are displayed on.
 			EditorGUILayout.PropertyField(optionsPanel, new GUIContent("Options Panel","The panel (GameObject) that the settings are displayed on."));
-			// The scenes that you do not want the options hot key to work on.
-			EditorGUILayout.PropertyField(noOptionKeyScenes, new GUIContent("No Options Scenes", "The scenes that you do not want the optionsKey to work on.  Examples would be cut scenes or main menus."), true);
+			// The backdrop so that we dont have any clickthroughs.
+			EditorGUILayout.PropertyField(optionsPanelBackdrop, new GUIContent("Options Clear Backdrop", "Optional, if you want to have a backdrop so that when your options are being shown nothing else can be clicked on."));
+//			// The scenes that you do not want the options hot key to work on.
+//			EditorGUILayout.PropertyField(noOptionKeyScenes, new GUIContent("No Options Scenes", "The scenes that you do not want the optionsKey to work on.  Examples would be cut scenes or main menus."), true);
 			// Decrease the indent.
 			EditorGUI.indentLevel--;
 

@@ -1,0 +1,13 @@
+[
+	{
+		"id": 0,
+		"prompt": "The old man told you to come and have a chat with me?",
+		"replies": {
+			"1": "No more with the run around please.  What is going on here?"
+		},
+		"dialoguelinks": {
+
+		},
+		"portrait": "Kid"
+	}
+]

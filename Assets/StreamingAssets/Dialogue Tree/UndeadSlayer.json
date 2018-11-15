@@ -1,0 +1,25 @@
+[
+	{
+		"id": 0,
+		"prompt": "By Prolands blade!!  What are you doing here?",
+		"replies": {
+			"1": "I was told there was an amazing warrior over here slaying the undead... Are you him?"
+		},
+		"dialoguelinks": {
+			"1": 1
+		},
+		"portrait": "UndeadSlayer"
+	},
+
+	{
+		"id": 1,
+		"prompt": "I am... I am the Undead Slayer and the fact you have heard of me and found me must mean you talked to my father.",
+		"replies": {
+			"1": "I did and I will let him know you are still alive and kicking undead boney ass!"
+		},
+		"dialoguelinks": {
+
+		},
+		"portrait": "UndeadSlayer"
+	}
+]

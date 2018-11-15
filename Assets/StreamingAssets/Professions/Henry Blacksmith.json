@@ -1,0 +1,22 @@
+[
+	{
+		"id": 0,
+		"title": "Metal Sword",
+		"profession": "Blacksmith",
+		"craftlevel": 1,
+		"cost": 0,
+		"costimage": "Coin",
+		"craftweight": 0,
+		"autolearn": true,
+		"type": "Weapon",
+		"crafttime": 3,
+		"ingredients": {
+			"id": "6",
+			"amount": "1"
+		},
+		"outputs" : {
+			"id": 1,
+			"amount": 1
+		}
+	}
+]

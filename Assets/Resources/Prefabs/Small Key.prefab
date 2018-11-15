@@ -5,15 +5,15 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 498724}
-  - 212: {fileID: 21268582}
-  - 61: {fileID: 6149208}
-  - 50: {fileID: 5039084}
-  - 114: {fileID: 11451100}
-  - 114: {fileID: 11464580}
-  - 114: {fileID: 11466694}
+  - component: {fileID: 498724}
+  - component: {fileID: 21268582}
+  - component: {fileID: 6149208}
+  - component: {fileID: 5039084}
+  - component: {fileID: 11451100}
+  - component: {fileID: 11464580}
+  - component: {fileID: 11466694}
   m_Layer: 8
   m_Name: Small Key
   m_TagString: Untagged
@@ -33,19 +33,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &5039084
 Rigidbody2D:
-  serializedVersion: 2
+  serializedVersion: 4
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 101382}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 15
   m_AngularDrag: 0.05
   m_GravityScale: 0
-  m_IsKinematic: 0
+  m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
@@ -75,14 +79,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dca3b5a0988a4c346a6f4ba17284f70b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canPickUp: 1
   isPlaced: 0
   id: 3
   amount: 1
   inventoryItem: 0
   title: 
-  value: 0
+  price: 0
+  currency: 
   rarity: 
   type: 
+  subType: 
   r: 0
   g: 0
   b: 0
@@ -95,6 +102,7 @@ MonoBehaviour:
   mana: 0
   restoreHP: 0
   restoreMP: 0
+  bonusHealth: 0
   description: 
   stackable: 0
   slug: 
@@ -132,22 +140,27 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -170768469
+  m_SortingLayerID: -334675473
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: a4f0e3e59e58850469e916d5896fa956, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

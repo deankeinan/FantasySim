@@ -16,7 +16,7 @@ namespace TrollBridge {
 		SerializedProperty dialogueColor;
 		SerializedProperty inactiveTime;
 
-		SerializedProperty multipleTransitions;
+//		SerializedProperty multipleTransitions;
 		SerializedProperty chatDuration;
 		SerializedProperty isInstantDialogue;
 		SerializedProperty isFadeDialogue;
@@ -43,7 +43,7 @@ namespace TrollBridge {
 			dialogueColor = serializedObject.FindProperty ("dialogueColor");
 			inactiveTime = serializedObject.FindProperty ("inactiveTime");
 
-			multipleTransitions = serializedObject.FindProperty ("multipleTransitions");
+//			multipleTransitions = serializedObject.FindProperty ("multipleTransitions");
 			chatDuration = serializedObject.FindProperty ("chatDuration");
 			isInstantDialogue = serializedObject.FindProperty ("isInstantDialogue");
 			isFadeDialogue = serializedObject.FindProperty ("isFadeDialogue");
@@ -112,8 +112,8 @@ namespace TrollBridge {
 			EditorGUILayout.LabelField("Dialogue Transition", EditorStyles.boldLabel);
 			// Increase the indent.
 			EditorGUI.indentLevel++;
-			// Get and Set the multiple transition boolean.
-			EditorGUILayout.PropertyField(multipleTransitions, new GUIContent("Multiple Transitions", "Set to 'true' if you want dialogue UI transitions to happen after each dialogue string in the 'Dialogue' array."));
+//			// Get and Set the multiple transition boolean.
+//			EditorGUILayout.PropertyField(multipleTransitions, new GUIContent("Multiple Transitions", "Set to 'true' if you want dialogue UI transitions to happen after each dialogue string in the 'Dialogue' array."));
 			// Get and Set the chatDuration.
 			EditorGUILayout.Slider(chatDuration, 0f, 30f, new GUIContent("Dialogue Duration", "The time each dialogue is visible before transitioning to the next dialogue.  This time starts after all transitions are done."));
 	//		Mathf.Round(chatDuration.floatValue * 100.0f) / 100f

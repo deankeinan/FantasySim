@@ -1,0 +1,87 @@
+[
+	{
+		"id": 0,
+		"retired": false,
+		"name": "Burning Bridges",
+		"minimumlevel": 1,
+		"questsneeded": "-1",
+		"description": "There is a bridge to the north... Can you check and see if it has been cleared yet?",
+		"shortdescription": "Check out the bridge fully.",
+		"waitingdialogue": "The bridge on fire or clear to cross?",
+		"finishdialogue": "Rocks blocking the way?  We can fix that by giving you this to do all the heavy lifting for me.",
+		"experience": 150,
+		"rewards": {
+			"id": "0",
+			"amount": "20"
+		},
+		"questtype": "Location",
+		"locationtype": { 
+			"parts": 1,
+			"partshint": "Take a look at the bridge to the North.  Once you are done with that I need you to come back to me near your house."
+		}
+	},
+
+	{
+		"id": 1,
+		"retired": false,
+		"name": "Time To Eat!",
+		"minimumlevel": 1,
+		"questsneeded": "0",
+		"description": "Not sure if you noticed but across the bridge is some food for our village.  I need you to get that.",
+		"shortdescription": "Find some food across the bridge.",
+		"waitingdialogue": "The lives of children all the way to elders rely on your deeds.",
+		"finishdialogue": "By Pro-din's Might you have found it.  Praise the Proland Gods and may every man, woman and child remember you.",
+		"experience": 150,
+		"rewards": {
+			"id": "6",
+			"amount": "1"
+		},
+		"questtype": "Collect",
+		"collecttype": {
+			"id": "2",
+			"amount": "3"
+		}
+	},
+
+	{
+		"id": 2,
+		"retired": false,
+		"name": "Bat Shit Crazy",
+		"minimumlevel": 1,
+		"questsneeded": "1",
+		"description": "Can you go to the sewers and exterminate some bats?",
+		"shortdescription": "Kill the bats in the sewers.",
+		"waitingdialogue": "Have you extinquished all those ding dong dang bats?",
+		"finishdialogue": "You killed the bats!! Awesome!  Here take this key I found... I think it's yours actually.  What are you hiding in your chest at home I wonder?",
+		"experience": 150,
+		"rewards": {
+			"id": "3",
+			"amount": "1"
+		},
+		"questtype": "Kill",
+		"killtype": { 
+			"name": "Red Bat",
+			"amount": "3"
+		}
+	},
+
+	{
+		"id": 3,
+		"retired": false,
+		"name": "The Final Quest!",
+		"minimumlevel": 1,
+		"questsneeded": "2",
+		"description": "There are stories of a slayer of the undead on the other side of the sewers.  Go see if the legend is true.",
+		"shortdescription": "",
+		"waitingdialogue": "Is the story true!?",
+		"finishdialogue": "Holy crap he exists!  The holy sword is glowing too!  You are telling the truth!!!  The Demo is now over but congrats on beating Demo 13!",
+		"experience": 1000,
+		"questtype": "Talk",
+		"talktype": {
+			"npcname": "Dwarf 2",
+			"scenename": "MainWorld - Everything",
+			"questdisplay": "We must know for sure if the legends are true... See what is on the other side of the sewers., Return to me if you found any information out bout my f.. friend and protector of Proland."
+		}
+	}
+
+]

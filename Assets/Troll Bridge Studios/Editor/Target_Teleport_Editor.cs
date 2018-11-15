@@ -14,8 +14,8 @@ namespace TrollBridge {
 		SerializedProperty minPitch;
 		SerializedProperty maxPitch;
 
-		SerializedProperty teleportStartAnimation;
-		SerializedProperty teleportEndAnimation;
+		SerializedProperty teleportStartEffects;
+		SerializedProperty teleportEndEffects;
 
 		SerializedProperty newLocation;
 
@@ -26,8 +26,8 @@ namespace TrollBridge {
 			minPitch = serializedObject.FindProperty ("minPitch");
 			maxPitch = serializedObject.FindProperty ("maxPitch");
 
-			teleportStartAnimation = serializedObject.FindProperty ("teleportStartAnimation");
-			teleportEndAnimation = serializedObject.FindProperty ("teleportEndAnimation");
+			teleportStartEffects = serializedObject.FindProperty ("teleportStartEffects");
+			teleportEndEffects = serializedObject.FindProperty ("teleportEndEffects");
 
 			newLocation = serializedObject.FindProperty ("newLocation");
 		}
@@ -43,8 +43,20 @@ namespace TrollBridge {
 			EditorGUILayout.LabelField("Tags", EditorStyles.boldLabel);
 			// Increase the Indent the lines.
 			EditorGUI.indentLevel++;
+//			// Set our array for our chest.
+//			EditorGUILayout.PropertyField(targetTags.FindPropertyRelative ("Array.size"), new GUIContent ("Tag Name", "The GameObjects with these tags can teleport.  IF this array length is 0 then there are no restrictions on teleporting and "));
 			// Array for the Target Tags.
 			EditorGUILayout.PropertyField(targetTags, new GUIContent("Tag Name", "The GameObjects with these tags can teleport.  IF this array length is 0 then there are no restrictions on teleporting and "), true);
+			// Decrease the Indent.
+			EditorGUI.indentLevel--;
+
+
+			// Movement Label.
+			EditorGUILayout.LabelField("Teleport", EditorStyles.boldLabel);
+			// Increase the Indent.
+			EditorGUI.indentLevel++;
+			// The new location to be teleported to.
+			EditorGUILayout.PropertyField(newLocation, new GUIContent("Teleport Location", "The location to be teleported."));
 			// Decrease the Indent.
 			EditorGUI.indentLevel--;
 
@@ -63,24 +75,14 @@ namespace TrollBridge {
 			EditorGUI.indentLevel--;
 
 
-			// Animation Label.
-			EditorGUILayout.LabelField("Animation", EditorStyles.boldLabel);
+			// Effects Label.
+			EditorGUILayout.LabelField("Effects", EditorStyles.boldLabel);
 			// Increase the Indent.
 			EditorGUI.indentLevel++;
 			// The start animation.
-			EditorGUILayout.PropertyField(teleportStartAnimation, new GUIContent("Start Animation", "Start location teleport animation."));
+			EditorGUILayout.PropertyField(teleportStartEffects, new GUIContent("Start Effects", "Start location teleport effects."));
 			// The end animation.
-			EditorGUILayout.PropertyField(teleportEndAnimation, new GUIContent("End Animation", "End location teleport animation."));
-			// Decrease the Indent.
-			EditorGUI.indentLevel--;
-
-
-			// Movement Label.
-			EditorGUILayout.LabelField("Teleport", EditorStyles.boldLabel);
-			// Increase the Indent.
-			EditorGUI.indentLevel++;
-			// The new location to be teleported to.
-			EditorGUILayout.PropertyField(newLocation, new GUIContent("Teleport Location", "The location to be teleported."));
+			EditorGUILayout.PropertyField(teleportEndEffects, new GUIContent("End Effects", "End location teleport effects."));
 			// Decrease the Indent.
 			EditorGUI.indentLevel--;
 

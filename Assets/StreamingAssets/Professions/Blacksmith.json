@@ -1,0 +1,22 @@
+[
+	{
+		"id": 0,
+		"title": "Ember Sword",
+		"profession": "Blacksmith",
+		"craftlevel": 1,
+		"cost": 0,
+		"costimage": "Green Crystal",
+		"craftweight": 0,
+		"autolearn": false,
+		"type": "Weapon",
+		"crafttime": 3,
+		"ingredients": {
+			"id": "0, 5",
+			"amount": "1, 100"
+		},
+		"outputs" : {
+			"id": 1,
+			"amount": 1
+		}
+	}
+]

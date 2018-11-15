@@ -46,7 +46,7 @@ namespace TrollBridge {
 			for(int i = 0; i < sceneNames.arraySize; i++)
 			{
 				EditorGUILayout.PropertyField(sceneNames.GetArrayElementAtIndex(i), GUIContent.none);
-			}		
+			}
 			// Apply.
 			serializedObject.ApplyModifiedProperties();
 		}

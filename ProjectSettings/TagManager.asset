@@ -4,16 +4,20 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Feet
-  - Death Panel
-  - WeaponSlotImage
-  - HeartDisplay
-  - UI_Canvas
   - Tooltip
+  - Top Weather Emission Max
+  - Death Panel
+  - Top Weather Emission Min
+  - Bottom Weather Emission Max
+  - Bottom Weather Emission Min
   - Top GUI
+  - Game Timer
   - Player Manager
-  - fakeWall
-  - BookShelf
+  - Feet
+  - Body
+  - UI_Canvas
+  - HeartDisplay
+  - WeaponSlotImage
   layers:
   - Default
   - TransparentFX
@@ -23,19 +27,14 @@ TagManager:
   - UI
   - 
   - 
-  - Player
-  - 
-  - Minimap
-  - Obstacles
-  - Bridge
-  - Tree Group
-  - Cliff
-  - 
-  - UnderCollider
-  - ItemColliderPlayer
-  - ItemColliderBridge
+  - Player Floor One
+  - Player Floor Two
+  - Player Floor Three
+  - Player Floor Four
+  - Border Wall
   - Wall
-  - Bridge Wall
+  - Fly
+  - Not Interactable
   - 
   - 
   - 
@@ -47,34 +46,45 @@ TagManager:
   - 
   - 
   - 
+  - 
+  - 
+  - Unwalkable
+  - Road
+  - Grass
   m_SortingLayers:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Ground
-    uniqueID: 2279685981
+  - name: Floor One Tile
+    uniqueID: 4289722045
     locked: 0
-  - name: Flowers and Bushes
-    uniqueID: 3108819495
+  - name: Floor One Ground
+    uniqueID: 3393092539
     locked: 0
-  - name: Player
-    uniqueID: 4124198827
+  - name: Floor One
+    uniqueID: 3510841113
     locked: 0
-  - name: Object
-    uniqueID: 399249135
+  - name: Floor Two Tile
+    uniqueID: 1448749071
     locked: 0
-  - name: Overlay
-    uniqueID: 3552458405
+  - name: Floor Two Ground
+    uniqueID: 531450881
     locked: 0
-  - name: Bridge
-    uniqueID: 1817165351
-    locked: 0
-  - name: Sky
-    uniqueID: 61983919
+  - name: Floor Two
+    uniqueID: 3018694695
     locked: 0
   - name: Fly
-    uniqueID: 1501050255
+    uniqueID: 200002659
+    locked: 0
+  - name: Overlay
+    uniqueID: 3914599249
+    locked: 0
+  - name: Sky
+    uniqueID: 69858465
+    locked: 0
+  - name: Weather
+    uniqueID: 2130126975
     locked: 0
   - name: UI
-    uniqueID: 3680846151
+    uniqueID: 242724263
     locked: 0

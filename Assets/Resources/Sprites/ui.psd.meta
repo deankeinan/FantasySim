@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 8136b2883c2811a48909fd87464b8f6c
-timeCreated: 1478116005
+timeCreated: 1482351592
 licenseType: Store
 TextureImporter:
   fileIDToRecycleName:
@@ -523,10 +523,10 @@ TextureImporter:
       name: ui_33
       rect:
         serializedVersion: 2
-        x: 1568
-        y: 768
-        width: 214
-        height: 113
+        x: 1571
+        y: 770
+        width: 207
+        height: 109
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 25, y: 15, z: 25, w: 15}

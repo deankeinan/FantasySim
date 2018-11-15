@@ -1,0 +1,40 @@
+[
+	{
+		"id": 0,
+		"title": "Fireball",
+		"class": "Wizard",
+		"description": "A ball of molten rock that deals %D Damage on impact.",
+		"cooldown": 0.0,
+		"casttime": 0.0,
+		"consumes": "Mana",
+		"consumeamount": 1.0,
+		"damage": 1.0,
+		"damagetype": "Magic",
+		"damagesubtype": "Fire",
+		"damagemultiplier": 1.5,
+		"castingsound": "",
+		"castsound": "",
+		"animation": 1,
+		"slug": "Fireball",
+		"requireweapon": false
+	},
+	{
+		"id": 1,
+		"title": "Whirlwind",
+		"class": "Warrior",
+		"description": "Unleash a brute force spin that will slice any enemies dealing %D Damage.",
+		"cooldown": 3.0,
+		"casttime": 0.0,
+		"consumes": "",
+		"consumeamount": 0.0,
+		"damage": 2.0,
+		"damagetype": "Physical",
+		"damagesubtype": "Physical",
+		"damagemultiplier": 1.0,
+		"castingsound": "",
+		"castsound": "",
+		"animation": 2,
+		"slug": "Fireball",
+		"requireweapon": true
+	}
+]
