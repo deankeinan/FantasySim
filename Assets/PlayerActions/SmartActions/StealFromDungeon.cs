@@ -42,7 +42,7 @@ namespace TrollBridge
             {
                 //Finds and navigate path to item
                 //Item should be picked up on collision if I interpret TrollBridge code correctly
-                PathRequestManager.RequestPath(start, end, mover.OnPathFound);
+                agent.transform.position = Vector2.Lerp(start, end, 2);
             }
 
             return true;
