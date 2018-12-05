@@ -62,6 +62,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\ClickNPCToListen.cs" />
+    <Compile Include="Assets\PlayerActions\ChooseAction.cs" />
+    <Compile Include="Assets\PlayerActions\SmartActions\Movement.cs" />
+    <Compile Include="Assets\PlayerActions\SmartActions\SmartAction.cs" />
+    <Compile Include="Assets\PlayerActions\SmartActions\StealFromDungeon.cs" />
     <Compile Include="Assets\TB_Assets\2D Pro Kit\_Scripts\_Archived Scripts\Action_Key_Dialogue.cs" />
     <Compile Include="Assets\TB_Assets\2D Pro Kit\_Scripts\_Archived Scripts\Area_Dialogue.cs" />
     <Compile Include="Assets\TB_Assets\2D Pro Kit\_Scripts\_Archived Scripts\Attack_Timer.cs" />
@@ -453,14 +457,14 @@
     <Reference Include="UnityEngine.SpatialTracking">
       <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
+    <Reference Include="LitJson">
+      <HintPath>/Users/deankeinan/Documents/GitHub/FantasySim/Assets/TB_Assets/2D Pro Kit/Plugins/LitJson.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.Analytics">
       <HintPath>/Users/deankeinan/Library/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/UnityEngine.Analytics.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.StandardEvents">
       <HintPath>/Users/deankeinan/Library/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.13/UnityEngine.StandardEvents.dll</HintPath>
-    </Reference>
-    <Reference Include="LitJson">
-      <HintPath>/Users/deankeinan/Documents/GitHub/FantasySim/Assets/TB_Assets/2D Pro Kit/Plugins/LitJson.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/unity/mscorlib.dll</HintPath>
