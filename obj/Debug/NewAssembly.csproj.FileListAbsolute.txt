@@ -1,4 +1,0 @@
-/Users/deankeinan/unity/FantasySims/obj/Debug/NewAssembly.csprojAssemblyReference.cache
-/Users/deankeinan/unity/FantasySims/obj/Debug/NewAssembly.csproj.CoreCompileInputs.cache
-/Users/deankeinan/Documents/GitHub/FantasySim/obj/Debug/NewAssembly.csprojAssemblyReference.cache
-/Users/deankeinan/Documents/GitHub/FantasySim/obj/Debug/NewAssembly.csproj.CoreCompileInputs.cache
