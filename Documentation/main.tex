@@ -1,0 +1,218 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%2345678901234567890123456789012345678901234567890123456789012345678901234567890
+%        1         2         3         4         5         6         7         8
+
+\documentclass[letterpaper, 10 pt, conference]{ieeeconf}  % Comment this line out
+                                                          % if you need a4paper
+%\documentclass[a4paper, 10pt, conference]{ieeeconf}      % Use this line for a4
+                                                          % paper
+
+\IEEEoverridecommandlockouts                              % This command is only
+                                                          % needed if you want to
+                                                          % use the \thanks command
+\overrideIEEEmargins
+% See the \addtolength command later in the file to balance the column lengths
+% on the last page of the document
+
+
+
+% The following packages can be found on http:\\www.ctan.org
+%\usepackage{graphics} % for pdf, bitmapped graphics files
+%\usepackage{epsfig} % for postscript graphics files
+%\usepackage{mathptmx} % assumes new font selection scheme installed
+%\usepackage{times} % assumes new font selection scheme installed
+%\usepackage{amsmath} % assumes amsmath package installed
+%\usepackage{amssymb}  % assumes amsmath package installed
+
+\title{\LARGE \bf
+Dungeons, Dragons, and Multi-Agent Interactive Narrative Systems
+}
+
+%\author{ \parbox{3 in}{\centering Huibert Kwakernaak*
+%         \thanks{*Use the $\backslash$thanks command to put information here}\\
+%         Faculty of Electrical Engineering, Mathematics and Computer Science\\
+%         University of Twente\\
+%         7500 AE Enschede, The Netherlands\\
+%         {\tt\small h.kwakernaak@autsubmit.com}}
+%         \hspace*{ 0.5 in}
+%}
+
+\author{
+	Chris Hartley, Dean Keinan, and Ryan Morey\\% <-this % stops a space
+	Undergraduate Studies, Computer Science\\
+	Rutgers University\\
+	New Brunswick, NJ\\
+}
+
+
+\begin{document}
+
+
+
+\maketitle
+\thispagestyle{empty}
+\pagestyle{empty}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{abstract}
+
+We introduce the design of an expressive multi-agent system relying on the rules and mechanics of the Dungeons and Dragons tabletop role playing game to drive dynamic planning and an emergent narrative. Furthermore, we document the process of implementing the system and incorporating it into a belief injection core game mechanic.
+
+\end{abstract}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Introduction}
+\subsection{Problem Statement}The challenge of interactive emergent narrative is multifaceted in nature. The larger a state space of any given expressive system, the larger the authorial burden in creating the underlying content that powers the system to express itself. Consequently, a larger corpus of content doesn't necessarily afford a system a method of resequencing and recombining that content into expressing the many possible states of a system. Additionally, the strategy of representing these states to allow a narrative to appear becomes increasingly difficult as these states are intended as storytelling elements. 
+
+Furthermore, incorporating such a system into a game mechanic comes with its own set of challenges. Bridging the gap between an Artificial Intelligence (AI) system and the player to create an enjoyable and salient storytelling experience requires consideration of the limitations of a classical AI system, and designing a game that plays to the strengths of that system.
+\subsection{Motivation}
+In the information age, the saturated state of content and media often comes under scrutiny. 
+Human storytelling has more possible mediums today than ever before. The medium of interactive storytelling, specifically in games, is a challenging topic of interest. As bestselling games approach a cinematic standard of narrative, the authorial burden required to create them rises in parallel with the length and depth of the narrative. Still, there is an interest in games that do not follow a linear narrative, and instead allow the player agency in the story. While many bestselling games implement branching narratives that allow for player decision making to have an impact, they are typically driven by a deep and often labor intensive authoring process that allows for that functionality.
+
+Additionally, there exists a significant divergence between the development of classical AI systems in the past 30 years and AI in contemporary games. This can be partially attributed to the coevolution of contemporary game AI with game genres and mechanics. Contemporary, bestselling 'AAA' games very seldom feature Classical AI systems.
+
+Tangentially, the concept of \emph{emergent narrative}, or a form of storytelling that emerges 'organically' by virtue of a system scheme and its mechanics, is also a topic of interest. Emergent narrative relies on the player perceiving segmented events as a continuous narrative. Games like \emph{The Sims}(Wright, 2000) which is AI-heavy provide the player a large degree of control to the point that the narrative of the game partially falls on the player to assemble and perceive.
+
+For these reasons, building intelligent systems that can deliver an interesting, and interactive narrative via gameplay with a decreased authorial burden is a challenging and intriguing topic of interest. Published research over the past 20 years has been circling the topic of interactive storytelling with different approaches, and increasingly detailed analyses of the design challenges.
+
+Finally, given the state of research within the field, there exist many combinations of published approaches that may lead to interesting system schemes. Attempting to implement these combinations, and publishing the results with an open source codebase may help further development toward more robust classical AI systems in games.
+\subsection{Applications}
+The real world applications and benefits of a \emph{perfectly} expressive multi-agent AI system are difficult to estimate. Theoretically, a hyper-realistic simulation of epistemically intelligent social agents could be used to model the transfer of knowledge, action-reaction chains in schools, offices, neighborhoods, and countries. The possibility of observing multiple AI agents forgetting, believing, and understanding a reality is highly intriguing.
+
+In a more practical sense, a robust multi-agent narrative system could have superb applications within the creative field. Translating authored prose into a model that a system scheme could process could allow for rapid prototyping of story arcs, narrative ideation, and surely be a standalone medium of creative expression.
+
+Additionally, in the case of emergent narrative systems where the player is allowed a high degree of control, there exist potential sociological and psychological research opportunities in observing players and the decisions they make when controlling or affecting AI with believable behaviors.
+\subsection{Challenges}
+	As mentioned earlier, the design challenges facing interactive emergent narrative systems have been well classified and researched. One could classify these challenges into two major sets: \emph{technical} and \emph{user experience}. This is not to say the two sets are disconnected, but that there are distinctly different solution strategies on both sides. These challenges are described in detail in much of the related work referenced in this paper. So for the sake of brevity, we will detail the challenges that we focused on.
+	
+	In the technical set, there exist challenges to generative storytelling that must be approached for an ideal system. For example: \emph{Modularity} of content - that is, the capability of arranging and rearranging the material used to express the underlying system state to the player. For stories to change dynamically and expand without a parallel increase in authorial burden, there must exist some form of modular content that can be assembled into every possible state of the system.
+	
+	Another technical challenge is \emph{story recognition}. If a system generates a sequence of events that constitutes a story arc, it should be capable of recognizing it in order to express that story to the player. Conceptually, approaching this challenge includes the implementation of goal recognition and gameplay summarization. Tangentially, an ideal system would have an understanding of a story and its implications. 
+	
+	A much broader technical challenge is the chosen implementation of knowledge, reasoning, and representation in humanoid AI. Representing knowledge, beliefs, motivations, morals, concerns, and all other components of a artificial decision-maker is a significant challenge. Dynamic planning is directly connected to the chosen implementation of these attributes, and the strategy to implement them is a non-trivial decision. More importantly, depending on the implementation of the game mechanic, the mental model of an AI agent must be 'conceptually' transparent to the player to allow a connection and emotional investment into the character.
+	
+	On the side of player experience, a primary challenge is (as Horswill describes it) \emph{fragility}. That is, AI systems can be very smart, but can also generate outcomes which are unexpected, annoying to the player, and destroy the illusion of intelligence. Emergent narrative is often scrutinized for its lack of emotional impact compared to a linear, authored story - and the concept of fragility in AI is surely closely related. A system can wonderfully simulate actions and reactions between agents, but if its expressive content does not \emph{drive} a narrative in a salient manner, the impact of the story is at risk, and the goal of the system is unfulfilled. 
+	
+	Another design challenge for the player experience is transparency, and managing the expectations of the player. Bridging the gap between a player's emotional investment and an AI system is a complex challenge, with a number of possible strategies to address it. In any system that encourages the player to interact and make decisions that affect a story, there will be edge states and actions that result in uninteresting or even undefined output. The challenge in managing expectations is delivering an understanding of the limitations of the AI system in a painless manner. The ideal approach to this challenge would better play to the strengths of the system, rather than encourage access to its shortcomings.
+	
+\subsection{Prior Work}
+	As mentioned earlier, interactive storytelling, and generative/emergent narrative driven by AI systems have been a significant topic of research and experimentation over the past 20 years. In particular, implementations of these systems have approached the primary design challenges in interesting ways.
+	
+	\emph{The Sims} approached modular content in a way that set a major precedent for accessible, enjoyable games based on AI mechanics. By adopting Simlish, a nonsensical language that each AI agent speaks and emotes with, and visualizing speech and thought bubbles in each interaction, \emph{The Sims} successfully approached the modular content challenge. Each interaction generated a succession of atomic reactions, emotions, and basic outcomes, which the player then interprets as a story arc. One could credit efficacy of this strategy to its deliberate ambiguity, and perhaps a natural suspension of disbelief when faced with a foreign language.
+	
+	Furthermore \emph{The Sims} can be credited with an interesting approach to the challenge of AI fragility and transparency. The player is immediately made aware that they play the role of a caretaker for these AI characters. It is up to them to keep the Sims out of trouble and functioning successfully. By virtue of this scheme, when a Sim performs in an unexpected or silly way given the state of the system (story), the "fault" falls on the player.
+	
+	Another contemporary example of AI driven narratives is \emph{Dwarf Fortress} (TODO citation). Dwarf Fortress makes it clear to the player that the entire written history for the fictional world they are inhabiting is being procedurally generated. The attention of the player is shifted to the fact that the world they are exploring is uniquely driven by competing agents, and that there are possible outcomes to their decisions. While not providing players nearly as much control as \emph{The Sims}, \emph{Dwarf Fortress} permits the player a deep, detailed dive into the narrative state, with the caveat that decisions may result in wild, often unexpected outcomes.
+	
+	More experimental, smaller scale games include \emph{Facade}, and \emph{Bad News} (TODO citation). \emph{Bad News} in particular approached many of the challenges of interactive storytelling in a noteworthy manner. It was implemented as a live performance with AI driven characters, motivations and backstories. By using human improvisation and interaction, \emph{Bad News} subverts the challenges of fragility and transparency in emergent narrative almost entirely. The player makes decisions intuitively and freely given a straightforward goal, and much like a tabletop RPG, the virtual world accommodates their decisions with detailed encounters, while a human moderator ensures that the story is continually driven forward. It's important to note that of all the approaches researched, it seemed apparent that \emph{Bad News} was capable of the most emotional impact to the player, albeit a smaller player base than any of the other games.
+\subsection{Limitations}
+	The limitations in prior work are quite apparent, and are summarily described as: no solution fits all. \emph{The Sims} does not express its world state explicitly in natural language, nor does it generate stories beyond a few predefined tracks of decision making. \emph{Dwarf Fortress} effectively generates stories, but the system itself is not aware its doing so, and can't recognize a story arc. \emph{Bad News} generates, captures, and delivers an interactive story, but depends entirely on the real life participation and moderation of its developers.
+	
+	These limitations are a result of the technical burden of developing any aspect of a narrative system to its fullest capabilities. The problem is particularly challenging as the ideal state is a game which is both extremely intelligent and frictionlessly expressive.  
+	
+Approaching these challenges is clearly a multidisciplinary effort. Salience of generative storytelling is as much about technical capability as it is about the end user perception. When attempting to simulate an art that humans have used and relied on for millenia, its clear that success is measured one aspect at a time.
+\subsection{Proposed Solution}
+In understanding the aforementioned research, our proposed approach is a combination of several published approaches and strategies. We propose relying on the ruleset and mechanics of Dungeons and Dragons (DnD), the popular tabletop roleplaying game, to drive a multi-agent AI simulation that allows for an emergent narrative.
+
+Furthermore, we propose implementing the game mechanic of \emph{belief injection} to allow for player interactivity. That is to say the player assumes the role of an omniscient observer, unable to directly steer any agent within the system. Simultaneously, however, the player is  given direct insight into the mental model of the agents, and a limited control over injecting or altering atomic \emph{beliefs}.
+
+\subsection{Technical Contributions}
+	Our primary technical contribution, while not unique in its front-end result, is a DnD simulation of non-player characters (NPCs) that is planned dynamically at a granular level. Of course, essentially every playable contemporary RPG is a DnD simulation on some level. However, we propose that a DnD simulation driven by classical AI mechanics in a system built to recognize agent beliefs and synthesize modular content will be a valuable and distinct technical contribution.
+	
+	Our secondary contribution is a visual interface for expressing a mental model and belief injection, along with an expressive mechanic for belief \emph{salience} and influence.
+	
+\subsection{Benefits}
+ Returning to the aforementioned challenges, our approach to \emph{fragility} and \emph{transparency} is a primary aspect of the proposed solution. We propose that leveraging DnD mechanics (a set of rules tried and tested by countless people improvising narratives) allows for a modular assembly of system state. We also propose that by allowing the player to fill the role of an omniscient being manipulating observable 'minds' approaches the issue of transparency and player expectation economically and potentially valuable as a standalone narrative.
+ 
+ We further propose that the mechanics of DnD allow for a simply expressed set of character traits, morality, concerns, obligations and most importantly: goals. The Dungeons and Dragons ruleset is built primarily to support interactive storytelling in groups of people, and is driven by quests and obligations of characters. By drawing hard limitations at the edges of DnD state space, we believe this opens up deep possibilities for competing interests between agents, and permission to introduce encounters and decisions in rapid succession. Dungeons are full of items, enemies, monsters, and seemingly trivial, game time decisions that need to be made. We propose that in the case of DnD, the emergent narrative is built from the unique method that a party gets from the front door fo the dungeon to the treasure at the end.
+ 
+ Finally, we propose that the mechanic of belief injection allows for a layer of interaction that promotes experimentation, and the potential to shift focus away from \emph{observing the simulation}. By incorporating DnD morality and alignment, we open up the possibility for challenging the player to generate unlikely outcomes. By providing the player with an omniscient knowledge of the world, but with only the power to trickle in knowledge, it's as much a game of persuasion as it is experiencing a generated narrative.
+ 
+  
+\section{Related Work}
+\subsection{Expressive AI \& Planning}
+- Mateas, Open Design Challenges
+
+- Alireza Shirvani, Narrative Planning
+
+- Vincent Breault, CONAN
+
+- Ryan, Towards Characters who Observe...
+
+\subsection{Game Mechanics}
+- Markus Eger, Belief Manipulation
+
+- Ryan, Bad News
+
+\subsection{Ian Horswill's MKUltra}
+- Motivation
+
+- Resources
+
+- Belief Injection Mechanic
+
+\section{Framework Overview}
+
+\section{Implementation}
+\subsection{Reactive Planner}
+\subsection{Mental Model}
+\subsection{Belief Injection}
+\subsection{System Expression}
+\subsection{Gameplay}
+\subsection{Interface}
+
+
+
+\section{Conclusions}
+
+
+\section{Limitations}
+
+%Limitations go here.
+\section{Future Work}
+
+%Future work goes here
+\addtolength{\textheight}{-12cm}   % This command serves to balance the column lengths
+                                  % on the last page of the document manually. It shortens
+                                  % the textheight of the last page by a suitable amount.
+                                  % This command does not take effect until the next page
+                                  % so it should come on the page before the last. Make
+                                  % sure that you do not shorten the textheight too much.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{APPENDIX}
+
+\section*{ACKNOWLEDGMENT}
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
+\begin{thebibliography}{99}
+
+\bibitem{c1} Horswill, Ian. "MKULTRA (Demo)" AAAI Conference on Artificial Intelligence and Interactive Digital Entertainment (2015): n. pag. Web. 30 Nov. 2018
+
+
+
+\end{thebibliography}
+
+
+
+
+\end{document}
