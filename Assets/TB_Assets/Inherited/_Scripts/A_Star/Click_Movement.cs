@@ -14,23 +14,49 @@ namespace TrollBridge {
 		[SerializeField] private float speed = 5f;
 		private Vector2[] path;
 		private int targetIndex;
-
+        PathRequestManager requestManager;
 
 		void Start(){
 			// Attempt to get this character manager script.
 			characterManager = GetComponentInParent <Character_Manager> ();
-		}
+            requestManager = GetComponentInParent<PathRequestManager>();
 
-		void Update () {
-			// IF we do a left click,
-			// ELSE IF we do a right click.
-			if (Input.GetMouseButtonDown (0) && leftClickMove) {
-				// See if we can find ourselves a path after a left click.
-				PathRequestManager.RequestPath ((Vector2)transform.position, (Vector2)Camera.main.ScreenToWorldPoint (Input.mousePosition), OnPathFound);
-			} else if (Input.GetMouseButtonDown (1) && rightClickMove) {
+        }
 
+        void Update () {
+			if (Input.GetKeyDown(KeyCode.X)) {
+                // See if we can find ourselves a path after a left click.
+                Vector2 newPosition = new Vector2();
+                newPosition = Random.insideUnitCircle * 8 + new Vector2(characterManager.transform.position.x, characterManager.transform.position.y);
+
+                while (true) 
+                {
+                    if(requestManager.IsVectorWalkable(newPosition)){
+                        break;
+                    }
+                    Debug.Log("looking for position");
+                    newPosition = Random.insideUnitCircle * 8 + new Vector2(characterManager.transform.position.x, characterManager.transform.position.y);
+                }
+                PathRequestManager.RequestPath ((Vector2)transform.position, newPosition, OnPathFound);
 			}
 		}
+
+        public void DoItNow(){
+                // See if we can find ourselves a path after a left click.
+                Vector2 newPosition = new Vector2();
+                newPosition = Random.insideUnitCircle * 8 + new Vector2(characterManager.transform.position.x, characterManager.transform.position.y);
+
+                while (true)
+                {
+                    if (requestManager.IsVectorWalkable(newPosition))
+                    {
+                        break;
+                    }
+                    Debug.Log("looking for position");
+                    newPosition = Random.insideUnitCircle * 8 + new Vector2(characterManager.transform.position.x, characterManager.transform.position.y);
+                }
+                PathRequestManager.RequestPath((Vector2)transform.position, newPosition, OnPathFound);
+        }
 
 		/// <summary>
 		/// Raises the path found event.

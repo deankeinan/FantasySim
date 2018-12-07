@@ -59,10 +59,10 @@ namespace TrollBridge {
 
 		void Update() {
 			// IF the inventory key is pushed AND our Canvas is active (meaning we only care about opening the inventory when the player is active) AND our options window is NOT active (open).
-			if (Input.GetKeyDown (Grid_Helper.kBinds.GetInventoryKeyCode()) && Grid_Helper.setup.UICanvas.activeInHierarchy && !Grid_Helper.optionManager.optionsPanel.activeInHierarchy) {
-				// Open or Close the inventory.
-				OpenCloseInventory ();
-			}
+			//if (Input.GetKeyDown (Grid_Helper.kBinds.GetInventoryKeyCode()) && Grid_Helper.setup.UICanvas.activeInHierarchy && !Grid_Helper.optionManager.optionsPanel.activeInHierarchy) {
+			//	// Open or Close the inventory.
+			//	OpenCloseInventory ();
+			//}
 
 			// IF YOU DON'T WANT TO USE THE KEYBINDS SCRIPT THEN COMMENT OUT WHAT IS ABOVE THIS AND UNCOMMENT WHAT IS BELOW HERE.  SINCE WE HAVE A KEYBINDS SCRIPT IT MAKES NO SENSE TO USE THE BELOW CODE.
 
@@ -419,10 +419,19 @@ namespace TrollBridge {
 			inventoryPanel.SetActive (!inventoryPanel.activeInHierarchy);
 		}
 
-		/// <summary>
-		/// Tosses the item out of inventory.
-		/// </summary>
-		public void TossItemOutOfInventory (string itemTitle, int slotNumber, int amount) {
+        public void OpenInventory(){
+            inventoryPanel.SetActive(true);
+        }
+
+        public void CloseInventory()
+        {
+            inventoryPanel.SetActive(false);
+        }
+
+        /// <summary>
+        /// Tosses the item out of inventory.
+        /// </summary>
+        public void TossItemOutOfInventory (string itemTitle, int slotNumber, int amount) {
 			// Spawn the item from it being thrown out of the inventory.
 			GameObject goItem = Grid_Helper.helper.SpawnObject (Grid_Helper.setup.GetGameObjectPrefab (itemTitle), Character_Helper.GetPlayer ().transform.position, Quaternion.identity, Character_Helper.GetPlayer (), radius);
 			// Store the amount that was tossed out.

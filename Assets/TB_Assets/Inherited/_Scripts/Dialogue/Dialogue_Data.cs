@@ -32,8 +32,8 @@ namespace TrollBridge {
 		/// Dialogue this instance.
 		/// </summary>
 		public void Dialogue () {
-			// Lets begin our dialogue.
-			closestDialogue.Dialogue ();
+            // Lets begin our dialogue.
+            closestDialogue.Dialogue ();
 		}
 
 		/// <summary>

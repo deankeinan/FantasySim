@@ -1,0 +1,54 @@
+[
+	{
+		"id": 0,
+		"prompt": "There must be some way out of here...",
+		"replies": {
+		},
+		"dialoguelinks": {
+			"1": 1
+		},
+		"portrait": "rpgportraits_22"
+	},
+	{
+		"id": 1,
+		"prompt": "Maybe there's something useful in this freaky place.",
+		"replies": {
+			
+		},
+		"dialoguelinks": {
+			"1": 2
+		},
+		"portrait": "rpgportraits_22"
+	},
+	{
+		"id": 2,
+		"prompt": "Is Bill hiding something from me?",
+		"replies": {
+			
+		},
+		"dialoguelinks": {
+			"1": 3
+		},
+		"portrait": "rpgportraits_22"
+	},
+	{
+		"id": 3,
+		"prompt": "I don't think this trip was worth it, I'm getting out of here, with or without Bill",
+		"replies": {
+			
+		},
+		"dialoguelinks": {
+			"1": 4
+		},
+		"portrait": "rpgportraits_22"
+	},
+	{
+		"id": 4,
+		"prompt": "I can't believe he accused me of stealing. Just how greedy is he?",
+		"replies": {
+		},
+		"dialoguelinks": {
+		},
+		"portrait": "rpgportraits_22"
+	}
+]

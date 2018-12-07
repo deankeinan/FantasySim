@@ -1,0 +1,21 @@
+[
+	{
+		"id": 0,
+		"title": "Whirlwind",
+		"class": "Warrior",
+		"description": "Unleash a brute force spin that will slice any enemies dealing %D Damage.",
+		"cooldown": 3.0,
+		"casttime": 0.0,
+		"consumes": "",
+		"consumeamount": 0.0,
+		"damage": 2.0,
+		"damagetype": "Physical",
+		"damagesubtype": "Physical",
+		"damagemultiplier": 1.0,
+		"castingsound": "",
+		"castsound": "",
+		"animation": 2,
+		"slug": "Fireball",
+		"requireweapon": true
+	}
+]

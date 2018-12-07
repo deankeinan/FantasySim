@@ -60,6 +60,7 @@ namespace TrollBridge {
 			Grid_Helper.dialogueData.AddToDialogueList (this);
 		}
 
+
 		/// <summary>
 		/// Raises the trigger exit 2d event.
 		/// </summary>

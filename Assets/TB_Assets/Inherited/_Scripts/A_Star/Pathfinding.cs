@@ -17,7 +17,8 @@ namespace TrollBridge {
 
 		void Awake () {
 			requestManager = GetComponent<PathRequestManager> ();
-			aStarGrid = GetComponent<AStar_Grid> ();
+            GameObject z = GameObject.Find("AStar");
+            aStarGrid = z.GetComponent<AStar_Grid>();
 		}
 
 		/// <summary>
@@ -44,10 +45,17 @@ namespace TrollBridge {
 			StartCoroutine (FindPath(startPos, targetPos));
 		}
 
-		/// <summary>
-		/// Finds the path.
-		/// </summary>
-		private IEnumerator FindPath (Vector3 startPos, Vector3 targetPos) {
+        public bool IsVectorWalkable(Vector2 target)
+        {
+            Node targetnode = aStarGrid.NodeFromWorldPoint(target);
+            return targetnode.GetWalkable();
+        }
+
+
+        /// <summary>
+        /// Finds the path.
+        /// </summary>
+        private IEnumerator FindPath (Vector3 startPos, Vector3 targetPos) {
 //			Stopwatch sw = new Stopwatch ();
 //			sw.Start ();
 

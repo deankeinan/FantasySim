@@ -1,0 +1,179 @@
+[
+	{
+		"id": 0,
+		"retired": false,
+		"name": "Bat Shit Crazy",
+		"minimumlevel": 1,
+		"questsneeded": "3",
+		"description": "Can you go to the basement and exterminate some bats?",
+		"shortdescription": "Kill the bats in the basement.",
+		"waitingdialogue": "Have you extinquished all those ding dong dang bats?",
+		"finishdialogue": "You killed the bats!! Woot!",
+		"experience": 150,
+		"rewards": {
+			"id": "4",
+			"amount": "15"
+		},
+		"questtype": "Kill",
+		"killtype": { 
+			"name": "Grey Bat",
+			"amount": "2"
+		}
+	},
+
+	{
+		"id": 1,
+		"retired": false,
+		"name": "Go To.... THE spot.",
+		"minimumlevel": 1,
+		"questsneeded": "0",
+		"description": "You are almost there friend.  I need you to visit some place.",
+		"shortdescription": "Go to the you know where in the you know what... ya hear what I'm say'n?",
+		"waitingdialogue": "Did you?",
+		"finishdialogue": "Comin back from you know where in you know what smellin like you know what I mean?  I always love chatting with you.",
+		"experience": 150,
+		"chooserewards": {
+			"id": "1, 5",
+			"amount": "1, 200"
+		},
+		"questtype": "Location",
+		"locationtype": { 
+			"parts": 1,
+			"partshint": "Blow something up so you can go past it, Show me what you find please."
+		}
+	},
+
+	{
+		"id": 2,
+		"retired": false,
+		"name": "OHHH NOOO!! Mr. Jimmy!",
+		"minimumlevel": 1,
+		"questsneeded": "-1",
+		"description": "Jimmy always has interesting things to say!",
+		"shortdescription": "",
+		"waitingdialogue": "What did he say?",
+		"finishdialogue": "He mentioned playing detective?",
+		"experience": 150,
+		"rewards": {
+			"id": "3",
+			"amount": "1"
+		},
+		"questtype": "Talk",
+		"talktype": {
+			"npcname": "Farmer, Kid",
+			"scenename": "MainWorld - Follow, HouseLrg - Follow",
+			"questdisplay": "Go and talk to the farmer near the carrot farm, Talk to the kid in the middle house located in Demoland., Tell the kiddo everything you heard."
+		}
+	},
+
+	{
+		"id": 3,
+		"retired": false,
+		"name": "Message NOT In A Bottle",
+		"minimumlevel": 1,
+		"questsneeded": "-1",
+		"description": "I need a message that isn't in a bottle.",
+		"shortdescription": "",
+		"waitingdialogue": "You have to hurry and find the message.  I can't wait very much longer.",
+		"finishdialogue": "YOU FOUND IT!!!!  Thank you!  Here take this weapon as the person I was looking for stated in this letter his time is nearing an end.... This was a year ago.",
+		"experience": 150,
+		"rewards": {
+			"id": "0",
+			"amount": "1"
+		},
+		"questtype": "Collect",
+		"collecttype": {
+			"id": "6",
+			"amount": "1"
+		}
+	},
+
+	{
+		"id": 4,
+		"retired": false,
+		"name": "In The End",
+		"minimumlevel": 1,
+		"questsneeded": "-1",
+		"description": "It doesn't even matter.  So just make it to the end and talk to my friend.",
+		"shortdescription": "",
+		"waitingdialogue": "What did he say?",
+		"finishdialogue": "I tried so hard.",
+		"experience": 150,
+		"rewards": {
+			"id": "5",
+			"amount": "400"
+		},
+		"questtype": "Talk",
+		"talktype": {
+			"npcname": "Kid, Farmer",
+			"scenename": "MainWorld - Quests 4, MainWorld - Quests",
+			"questdisplay": "Go and talk to the kid at the end, Head back to the farmer and tell him!, Claim your reward at the Farmer."
+		}
+	},
+
+	{
+		"id": 5,
+		"retired": false,
+		"name": "Love Me Some Bush",
+		"minimumlevel": 1,
+		"questsneeded": "-1",
+		"description": "Go pick up those bushes over there.",
+		"shortdescription": "",
+		"waitingdialogue": "You're bushless....",
+		"finishdialogue": "The bush is strong with you.",
+		"experience": 150,
+		"rewards": {
+			"id": "0",
+			"amount": "1"
+		},
+		"questtype": "Collect",
+		"collecttype": {
+			"id": "10",
+			"amount": "3"
+		}
+	},
+
+	{
+		"id": 6,
+		"retired": false,
+		"name": "Go To.... THE END spot.",
+		"minimumlevel": 1,
+		"questsneeded": "-1",
+		"description": "You are almost there friend.  I need you to visit some place.",
+		"shortdescription": "Go to the you know where in the you know what... ya hear what I'm say'n?",
+		"waitingdialogue": "Did you?",
+		"finishdialogue": "Comin back from you know where in you know what smellin like you know what I mean?  I always love chatting with you.",
+		"experience": 150,
+		"chooserewards": {
+			"id": "1",
+			"amount": "1"
+		},
+		"questtype": "Location",
+		"locationtype": { 
+			"parts": 1,
+			"partshint": "Blow something up so you can go past it.  Run through the Quest 3 scene and you will complete a location part., Come back to the start and talk to me when you have done this."
+		}
+	},
+
+	{
+		"id": 7,
+		"retired": false,
+		"name": "Bat Shit Crazy",
+		"minimumlevel": 1,
+		"questsneeded": "-1",
+		"description": "Can you go to the basement and exterminate some bats?",
+		"shortdescription": "Kill the bats in the basement.",
+		"waitingdialogue": "Have you extinquished all those ding dong dang bats?",
+		"finishdialogue": "You killed the bats!! Woot!",
+		"experience": 150,
+		"rewards": {
+			"id": "5",
+			"amount": "20"
+		},
+		"questtype": "Kill",
+		"killtype": { 
+			"name": "Grey Bat",
+			"amount": "2"
+		}
+	}
+]

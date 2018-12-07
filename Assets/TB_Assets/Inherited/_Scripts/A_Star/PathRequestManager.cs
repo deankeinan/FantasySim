@@ -24,10 +24,17 @@ namespace TrollBridge {
 			pathFinding = GetComponent<Pathfinding> ();
 		}
 
-		/// <summary>
-		/// Requests the path.
-		/// </summary>
-		public static void RequestPath(Vector2 pathStart, Vector2 pathEnd, Action<Vector2[], bool> callback) {
+        public  bool IsVectorWalkable(Vector2 target)
+        {
+            return pathFinding.IsVectorWalkable(target);
+            
+        }
+
+
+        /// <summary>
+        /// Requests the path.
+        /// </summary>
+        public static void RequestPath(Vector2 pathStart, Vector2 pathEnd, Action<Vector2[], bool> callback) {
 			// Lets create a new PathRequest.
 			PathRequest newRequest = new PathRequest (pathStart, pathEnd, callback);
 			// Enqueue the PathRequest Queue.

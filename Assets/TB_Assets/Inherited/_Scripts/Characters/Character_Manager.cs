@@ -108,7 +108,7 @@ namespace TrollBridge {
 				// ELSE IF the character can move.
 				if (isInteracting) {
 					// Handle the direction the NPC is looking.
-					NPCLookDirection ();
+					//NPCLookDirection ();
 				} else if (canMove) {
 					// Play the animation.
 					PlayAnimation (amountMovedX, amountMovedY);

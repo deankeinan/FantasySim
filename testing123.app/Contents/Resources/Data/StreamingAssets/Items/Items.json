@@ -1,0 +1,322 @@
+[
+	{
+		"id": 0,
+		"title": "Dragon Sword",
+		"value": {
+		  	"price": 100,
+			"currency": "Crystal"
+		},
+		"rarity": "Rare",
+		"type": "Weapon",
+		"subtype": "Sword",
+		"color": {
+			"r": 255,
+			"g": 255,
+			"b": 255,
+			"a": 255
+		},
+		"stats": {
+			"damage": 1,
+			"armour": 0,
+			"magicarmour": 0,
+			"movespeed": 0,
+			"health": 0,
+			"mana": 0
+		},
+		"description": "Crafted from the scales of the last dragon",
+		"inventoryitem": true,
+		"stackable": false,
+		"pickupsound": "SharpWeaponPickup",
+		"usedsound": "SharpWeaponEquip",
+		"attacksound": "SwordSwing1",
+		"slug": "dragon_sword",
+		"weaponslug": "Dragon Sword Weapon"
+	},
+
+	{
+		"id": 1,
+		"title": "Ember Sword",
+		"value": {
+		  	"price": 500,
+			"currency": "Crystal"
+		},
+		"rarity": "Legendary",
+		"type": "Weapon",
+		"subtype": "Sword",
+		"color": {
+			"r": 255,
+			"g": 0,
+			"b": 0,
+			"a": 255
+		},
+		"stats": {
+			"damage": 2,
+			"armour": 0,
+			"magicarmour": 0,
+			"movespeed": 0,
+			"health": 0,
+			"mana": 0
+		},
+		"description": "The burning anger from betrayed fallen heroes linger deep within the blade of this sword",
+		"inventoryitem": true,
+		"stackable": false,
+		"pickupsound": "SharpWeaponPickup",
+		"usedsound": "SharpWeaponEquip",
+		"attacksound": "SwordSwing1",
+		"slug": "dragon_sword",
+		"weaponslug": "Ember Sword Weapon"
+	},
+
+	{
+		"id": 2,
+		"title": "Red Potion",
+		"value": {
+		  	"price": 50,
+			"currency": "Crystal"
+		},
+		"rarity": "Common",
+		"type": "Consumable",
+		"subtype": "Potion",
+		"color": {
+			"r": 255,
+			"g": 255,
+			"b": 255,
+			"a": 255
+		},
+		"usage": {
+			"restorehp": 2
+		},
+		"description": "Restores some HP",
+		"inventoryitem": true,
+		"stackable": true,
+		"pickupsound": "PotionPickup",
+		"usedsound": "PotionUsed",
+		"slug": "red_potion"
+	},
+
+	{
+		"id": 3,
+		"title": "Small Key",
+		"value": {
+		  	"price": 10,
+			"currency": "Crystal"
+		},
+		"rarity": "Common",
+		"type": "Key",
+		"subtype": "Key",
+		"color": {
+			"r": 255,
+			"g": 255,
+			"b": 255,
+			"a": 255
+		},
+		"description": "Unlocks basic doors and chests",
+		"inventoryitem": false,
+		"stackable": true,
+		"pickupsound": "KeyPickup",
+		"usedsound": "",
+		"slug": "small_key"
+	},
+
+	{
+		"id": 4,
+		"title": "Small Bomb",
+		"value": {
+		  	"price": 10,
+			"currency": "Crystal"
+		},
+		"rarity": "Common",
+		"type": "Bomb",
+		"subtype": "Bomb",
+		"color": {
+			"r": 255,
+			"g": 255,
+			"b": 255,
+			"a": 255
+		},
+		"description": "The amatuers bomb",
+		"inventoryitem": false,
+		"stackable": true,
+		"pickupsound": "BombPickup",
+		"usedsound": "BombDrop",
+		"slug": "small_bomb"
+	},
+
+	{
+		"id": 5,
+		"title": "Crystal",
+		"value": {
+		  	"price": 0,
+			"currency": "Crystal"
+		},
+		"rarity": "Common",
+		"type": "Currency",
+		"subtype": "",
+		"color": {
+			"r": 255,
+			"g": 255,
+			"b": 255,
+			"a": 255
+		},
+		"description": "Basic currency used throughout Demo-Land",
+		"inventoryitem": false,
+		"stackable": true,
+		"pickupsound": "CrystalPickup",
+		"usedsound": "",
+		"slug": "green_crystal"
+	},
+
+	{
+		"id": 6,
+		"title": "Jimmys Note",
+		"value": {
+		  	"price": 0,
+			"currency": "Crystal"
+		},
+		"rarity": "Common",
+		"type": "Paper",
+		"subtype": "Information",
+		"color": {
+			"r": 35,
+			"g": 200,
+			"b": 80,
+			"a": 255
+		},
+		"description": "Hey this is Jimmy and I am going to be a dad!!!",
+		"inventoryitem": true,
+		"stackable": false,
+		"pickupsound": "KeyPickup",
+		"usedsound": "",
+		"slug": "win_document"
+	},
+
+	{
+		"id": 7,
+		"title": "Win Note",
+		"value": {
+		  	"price": 0,
+			"currency": "Crystal"
+		},
+		"rarity": "Common",
+		"type": "Paper",
+		"subtype": "Information",
+		"color": {
+			"r": 255,
+			"g": 255,
+			"b": 255,
+			"a": 255
+		},
+		"description": "You have beat Demo-Land!!! Tweet us @ TrollBridgeDevs for any new ideas you want to see in future additions of the RPG kit!  This note smells like poo.",
+		"inventoryitem": true,
+		"stackable": false,
+		"pickupsound": "KeyPickup",
+		"usedsound": "",
+		"slug": "win_document"
+	},
+
+	{
+		"id": 8,
+		"title": "Heart Up",
+		"value": {
+		  	"price": 0,
+			"currency": "Crystal"
+		},
+		"rarity": "Rare",
+		"type": "Stat Increase",
+		"subtype": "Health Increase",
+		"color": {
+			"r": 255,
+			"g": 255,
+			"b": 255,
+			"a": 255
+		},
+		"bonus": {
+			"health": 1,
+			"mana": 0
+		},
+		"description": "Increases your max health!",
+		"inventoryitem": false,
+		"stackable": false,
+		"pickupsound": "KeyPickup",
+		"usedsound": "",
+		"slug": "full_heart"
+	},
+
+	{
+		"id": 9,
+		"title": "Blue Potion",
+		"value": {
+		  	"price": 50,
+			"currency": "Crystal"
+		},
+		"rarity": "Common",
+		"type": "Consumable",
+		"subtype": "Potion",
+		"color": {
+			"r": 0,
+			"g": 0,
+			"b": 255,
+			"a": 255
+		},
+		"usage": {
+			"restoremp": 2
+		},
+		"description": "Restores some MP",
+		"inventoryitem": true,
+		"stackable": true,
+		"pickupsound": "PotionPickup",
+		"usedsound": "PotionUsed",
+		"slug": "red_potion"
+	},
+
+	{
+		"id": 10,
+		"title": "Berry Bush",
+		"value": {
+		  	"price": 50,
+			"currency": "Crystal"
+		},
+		"rarity": "Common",
+		"type": "Craft Material",
+		"subtype": "Tier One",
+		"color": {
+			"r": 255,
+			"g": 255,
+			"b": 255,
+			"a": 255
+		},
+		"description": "A bush that grows multiple berries?  Wow!",
+		"inventoryitem": true,
+		"stackable": true,
+		"pickupsound": "PotionPickup",
+		"usedsound": "",
+		"slug": "bush_bloom_sml"
+	},
+
+	{
+		"id": 11,
+		"title": "Red Potion II",
+		"value": {
+		  	"price": 100,
+			"currency": "Crystal"
+		},
+		"rarity": "Common",
+		"type": "Consumable",
+		"subtype": "Potion",
+		"color": {
+			"r": 255,
+			"g": 255,
+			"b": 255,
+			"a": 255
+		},
+		"usage": {
+			"restorehp": 4
+		},
+		"description": "Restores 4 HP",
+		"inventoryitem": true,
+		"stackable": true,
+		"pickupsound": "PotionPickup",
+		"usedsound": "PotionUsed",
+		"slug": "red_potion"
+	}
+]

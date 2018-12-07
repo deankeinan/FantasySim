@@ -1,0 +1,62 @@
+[
+	{
+		"id": 0,
+		"title": "Red Potion",
+		"profession": "Alchemy",
+		"craftlevel": 1,
+		"cost": 0,
+		"costimage": "Crystal",
+		"craftweight": 0,
+		"autolearn": true,
+		"type": "Consumable",
+		"crafttime": 5,
+		"ingredients": {
+			"id": "10",
+			"amount": "1"
+		},
+		"outputs" : {
+			"id": 2,
+			"amount": 1
+		}
+	},
+	{
+		"id": 1,
+		"title": "Blue Potion",
+		"profession": "Alchemy",
+		"craftlevel": 1,
+		"cost": 10,
+		"costimage": "Crystal",
+		"craftweight": 0,
+		"autolearn": false,
+		"type": "Consumable",
+		"crafttime": 5,
+		"ingredients": {
+			"id": "5",
+			"amount": "10"
+		},
+		"outputs" : {
+			"id": 9,
+			"amount": 1
+		}
+	},
+	{
+		"id": 2,
+		"title": "Red Potion II",
+		"profession": "Alchemy",
+		"craftlevel": 2,
+		"cost": 40,
+		"costimage": "Crystal",
+		"craftweight": 0,
+		"autolearn": false,
+		"type": "Consumable",
+		"crafttime": 5,
+		"ingredients": {
+			"id": "10",
+			"amount": "1"
+		},
+		"outputs" : {
+			"id": 11,
+			"amount": 1
+		}
+	}
+]

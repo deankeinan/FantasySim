@@ -1,0 +1,43 @@
+[
+	{
+		"id": 1,
+		"prompt": "When will this nightmare end??",
+		"replies": {
+		},
+		"dialoguelinks": {
+			"1": 2
+		},
+		"portrait": "Jimmy"
+	},
+	{
+		"id": 2,
+		"prompt": "Is Jane hiding something from me?",
+		"replies": {
+			
+		},
+		"dialoguelinks": {
+			"1": 3
+		},
+		"portrait": "rpgportraits_22"
+	},
+	{
+		"id": 3,
+		"prompt": "I can get through this without her. Might as well save myself and keep going.",
+		"replies": {
+			
+		},
+		"dialoguelinks": {
+			"1": 4
+		},
+		"portrait": "rpgportraits_22"
+	},
+	{
+		"id": 4,
+		"prompt": "No one pulls a fast one on old Bill.",
+		"replies": {
+		},
+		"dialoguelinks": {
+		},
+		"portrait": "rpgportraits_22"
+	}
+]

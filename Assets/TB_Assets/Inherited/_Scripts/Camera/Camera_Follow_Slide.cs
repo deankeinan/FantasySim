@@ -96,6 +96,7 @@ namespace TrollBridge {
 		void Awake () {
 			// Set the transform.
 			_transform = gameObject.transform;
+            _transform.position.Set(_transform.position.x, _transform.position.y, _transform.position.z + 50);
 			// Grab the main Camera Component.
 			_camera = Camera.main;
 			// The Camera's width and height.
@@ -199,7 +200,7 @@ namespace TrollBridge {
 			switch (direction) {
 			// Move UP
 			case 1:
-				destination = new Vector3 (_transform.position.x, _transform.position.y + innerHeight, _transform.position.z);
+				destination = new Vector3 (_transform.position.x, _transform.position.y + innerHeight, _transform.position.z + 50);
 				// As the camera will be panning lets move our player in the direction desired to it can collide with the new bounds area to be set.
 				break;
 			// Move DOWN

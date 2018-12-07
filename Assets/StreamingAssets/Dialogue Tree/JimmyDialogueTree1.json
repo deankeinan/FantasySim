@@ -1,54 +1,40 @@
 [
 	{
-		"id": 0,
-		"prompt": "Hello Mr!  May I ask what you are doing on my lawn?",
-		"replies": {
-			"1": "I am lost and not sure where I am.",
-			"2": "I came here to look for treasures!",
-			"3": "Non of your damn business!"
-		},
-		"dialoguelinks": {
-			"1": 1,
-			"2": 1,
-			"3": 3
-		},
-		"portrait": "Jimmy"
-	},
-
-	{
 		"id": 1,
-		"prompt": "Well if you are like all the others then you must be in search of the forbidden treasure located in the Lost Souls Field.  Would that be a correct assumption?",
+		"prompt": "Another pleasant trip to the dungeons.",
 		"replies": {
-			"1": "Your assumption would be correct!",
-			"2": "Rabble Rabble Rabble get out of my way."
 		},
 		"dialoguelinks": {
-			"1": 2,
-			"2": 3
+			"1": 2
 		},
 		"portrait": "Jimmy"
 	},
-
 	{
 		"id": 2,
-		"prompt": "The Lost Souls Field is located north of here, but be careful and bring a weapon with you.",
+		"prompt": "When will this nightmare end??",
 		"replies": {
-			"1": "Thank you for the help!"
 		},
 		"dialoguelinks": {
-			
+			"1": 3
 		},
 		"portrait": "Jimmy"
 	},
-
 	{
 		"id": 3,
-		"prompt": "How rude... Get off my lawn this instant!",
+		"prompt": "I can get through this without her. Might as well save myself and keep going.",
 		"replies": {
-
 		},
 		"dialoguelinks": {
-
+			"1": 4
+		},
+		"portrait": "Jimmy"
+	},
+	{
+		"id": 4,
+		"prompt": "No one pulls a fast one on old Bill.",
+		"replies": {
+		},
+		"dialoguelinks": {
 		},
 		"portrait": "Jimmy"
 	}
